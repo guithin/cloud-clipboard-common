@@ -6,4 +6,6 @@ export interface ExTypes<P = unknown, ResB = unknown, ReqB = unknown, ReqQ = unk
   Locs: Locs; // local (server use)
 }
 
+export type WSTypes<Body = unknown> = (p: Body) => void;
+
 export type StringNumber = `${number}`;
