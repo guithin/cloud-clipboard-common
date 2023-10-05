@@ -10,6 +10,7 @@ export declare namespace ExampleIO {
 
   interface ExampleWSListen {
     ExampleWSL: { id: number };
+    EnterRoom: { roomId: string };
   }
 
   interface ExampleWSEmit {
