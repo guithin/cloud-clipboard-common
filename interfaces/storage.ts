@@ -38,10 +38,19 @@ interface DownloadReqQ {
   sToken?: string;
 }
 
+interface BucketLstResB {
+  buckets: {
+    name: string;
+    type: 'OS' | 'S3' | 'FTP';
+    ownerName: string;
+  }[];
+}
+
 // P, ResB, ReqB, ReqQ, Locs
 export declare namespace StorageIO {
   type ReadDir = ExTypes<{}, ReadDirResB, ReadDirReqB>;
   type Mkdir = ExTypes<{}, {}, MkdirReqB>;
   type RmDirent = ExTypes<{}, {}, RmDirentReqB>;
   type Download = ExTypes<{}, {}, {}, DownloadReqQ>;
+  type BucketLst = ExTypes<{}, BucketLstResB>;
 }
