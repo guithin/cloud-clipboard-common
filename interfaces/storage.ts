@@ -46,6 +46,12 @@ interface BucketLstResB {
   }[];
 }
 
+interface UploadReqB {
+  bucket: string;
+  path: string;
+  filename: string;
+}
+
 // P, ResB, ReqB, ReqQ, Locs
 export declare namespace StorageIO {
   type ReadDir = ExTypes<{}, ReadDirResB, ReadDirReqB>;
@@ -53,4 +59,5 @@ export declare namespace StorageIO {
   type RmDirent = ExTypes<{}, {}, RmDirentReqB>;
   type Download = ExTypes<{}, {}, {}, DownloadReqQ>;
   type BucketLst = ExTypes<{}, BucketLstResB>;
+  type Upload = ExTypes<{}, {}, UploadReqB, {}>;
 }
