@@ -6,7 +6,7 @@ interface ExampleReqQ {
 
 // P, ResB, ReqB, ReqQ, Locs
 export declare namespace ExampleIO {
-  type ExampleaApi = ExTypes<{}, {}, {}, ExampleReqQ>;
+  type ExampleaApi = ExTypes<unknown, unknown, unknown, ExampleReqQ>;
 
   interface ExampleWSListen {
     ExampleWSL: { id: number };

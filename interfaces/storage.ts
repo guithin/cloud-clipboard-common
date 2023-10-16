@@ -54,10 +54,10 @@ interface UploadReqB {
 
 // P, ResB, ReqB, ReqQ, Locs
 export declare namespace StorageIO {
-  type ReadDir = ExTypes<{}, ReadDirResB, ReadDirReqB>;
-  type Mkdir = ExTypes<{}, {}, MkdirReqB>;
-  type RmDirent = ExTypes<{}, {}, RmDirentReqB>;
-  type Download = ExTypes<{}, {}, {}, DownloadReqQ>;
-  type BucketLst = ExTypes<{}, BucketLstResB>;
-  type Upload = ExTypes<{}, {}, UploadReqB, {}>;
+  type ReadDir = ExTypes<unknown, ReadDirResB, ReadDirReqB>;
+  type Mkdir = ExTypes<unknown, unknown, MkdirReqB>;
+  type RmDirent = ExTypes<unknown, unknown, RmDirentReqB>;
+  type Download = ExTypes<unknown, unknown, unknown, DownloadReqQ>;
+  type BucketLst = ExTypes<unknown, BucketLstResB>;
+  type Upload = ExTypes<unknown, unknown, UploadReqB, unknown>;
 }

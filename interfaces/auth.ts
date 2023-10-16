@@ -12,5 +12,5 @@ interface LoginResB {
 
 // P, ResB, ReqB, ReqQ, Locs
 export declare namespace AuthIO {
-  type Login = ExTypes<{}, LoginResB, LoginReqB>;
+  type Login = ExTypes<unknown, LoginResB, LoginReqB>;
 }
