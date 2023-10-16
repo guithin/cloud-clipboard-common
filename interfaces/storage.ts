@@ -59,5 +59,6 @@ export declare namespace StorageIO {
   type RmDirent = ExTypes<unknown, unknown, RmDirentReqB>;
   type Download = ExTypes<unknown, unknown, unknown, DownloadReqQ>;
   type BucketLst = ExTypes<unknown, BucketLstResB>;
-  type Upload = ExTypes<unknown, unknown, UploadReqB, unknown>;
+  // eslint-disable-next-line
+  type Upload = ExTypes<{}, unknown, UploadReqB, {}>;
 }
