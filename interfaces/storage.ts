@@ -52,6 +52,12 @@ interface UploadReqB {
   filename: string;
 }
 
+interface MvDirentReqB {
+  bucket: string;
+  srcPath: string;
+  destPath: string;
+}
+
 // P, ResB, ReqB, ReqQ, Locs
 export declare namespace StorageIO {
   type ReadDir = ExTypes<unknown, ReadDirResB, ReadDirReqB>;
@@ -61,4 +67,5 @@ export declare namespace StorageIO {
   type BucketLst = ExTypes<unknown, BucketLstResB>;
   // eslint-disable-next-line
   type Upload = ExTypes<{}, unknown, UploadReqB, {}>;
+  type MvDirent = ExTypes<unknown, unknown, MvDirentReqB>;
 }
