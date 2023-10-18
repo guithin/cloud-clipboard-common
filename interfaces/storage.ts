@@ -41,7 +41,7 @@ interface DownloadReqQ {
 interface BucketLstResB {
   buckets: {
     name: string;
-    type: 'OS' | 'S3' | 'FTP';
+    type: 'OS' | 'S3' | 'FTP' | 'EP';
     ownerName: string;
   }[];
 }
