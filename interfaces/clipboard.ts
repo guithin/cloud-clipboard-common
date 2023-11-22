@@ -1,4 +1,4 @@
-import { ExTypes } from './base';
+import { ExTypes, WSTypes } from './base';
 
 interface MsgClientFmt {
   bucket: string;
@@ -15,8 +15,8 @@ interface MsgClientFmt {
 }
 
 interface MsgServerFmt {
-  // bucketid - machineidx - idx
-  id: `${number}-${number}-${number}`;
+  // machineidx - idx
+  id: string;
   bucket: string;
   msg: {
     type: 'text',
@@ -47,6 +47,6 @@ export declare namespace ClipboardIO {
   }
 
   interface ClipboardWSE {
-
+    SendMsg: WSTypes<MsgServerFmt>;
   }
 }
