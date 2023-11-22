@@ -9,7 +9,7 @@ interface MsgClientFmt {
     type: 'file',
     content: {
       name: string;
-      buffer: Buffer;
+      buffer: ArrayBuffer;
     }[];
   };
 }
